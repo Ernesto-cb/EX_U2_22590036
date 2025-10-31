@@ -34,6 +34,7 @@ class Post(db.Model):
 # Crear las tablas si no existen
 with app.app_context():
     db.create_all()
+    
 
 # Ruta para ver todos los posts
 @app.route('/')
